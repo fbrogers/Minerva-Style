@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* generics -------------------------------------------------------------------------------------------------------- */
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "UCF Sans Serif Alt", "Helvetica Neue", Arial, sans-serif;
+    font-size: .875rem;
+    line-height: 1.65;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* site header elements -------------------------------------------------------------------------------------------- */
+
+.site-header{
+    padding: 2.5em 0 2em;
+    background-color: #fff;
+}
+
+.site-header .site-title{
+    font-size: 4.375em;
+    line-height: 1em;
+    font-family: "UCF Condensed Alt", sans-serif;
+}
+
+.site-header .site-subtitle{
+    display: inline-block;
+    font-size: 0.4em;
+    letter-spacing: 0;
+    line-height: 1.0em;
+    padding-left: 0.5em;
+    font-family: "UCF Sans Serif Alt", sans-serif;
+    font-weight: 300;
+}
+
+.site-header .site-title a,
+.site-header .site-subtitle a{
+    color: #000;
+    text-decoration: none;
+}
+
+.site-header .site-title a:hover,
+.site-header .site-subtitle a:hover{
+    color: #333;
+}
+
+.site-header.dark{
+    background-color: #3e3e3e;
+}
+
+.site-header.dark .site-title a,
+.site-header.dark .site-subtitle a{
+    color: #fafafa;
+}
+
+.site-header.dark .site-title a:hover,
+.site-header.dark .site-subtitle a:hover{
+    color: #eee;
+}
+
+
+
+/* site navigation elements ---------------------------------------------------------------------------------------- */
+
+.site-nav{
+    background-color: #fc0;
+    color: 000;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .site-nav .container {
+        padding: 0.5em;
+    }
+}
+
+.site-nav .navbar-nav{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.site-nav .navbar-nav .nav-link {
+    color: #000;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: 1.2;
+    padding: 1.25rem .8rem;
+    text-transform: uppercase;
+}
+
+.site-nav .navbar-nav .active>.nav-link,
+.site-nav .navbar-nav .nav-link:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,.15);
+}
+
+.site-nav-repeat{
+    margin: 3em auto 2em;
+}
+
+/* site footer elements -------------------------------------------------------------------------------------------- */
+
+.site-footer{
+    background-color: #3e3e3e;
+    color: #ccc;
+    padding: 30px 0;
+}
+
+.site-footer a{
+    color: #ccc;
+}
+
+.site-footer a.external, .site-footer a[href$='.pdf']{
+    background: none;
+    padding: 0;
+}
+
+.site-footer a:hover{
+    color: #eee;
+}
+
+/* fonts ----------------------------------------------------------------------------------------------------------- */
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:400
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:600
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:300
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:500
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:700
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:800
+}
+
+@font-face{
+    font-family:"UCF Sans Serif Alt";
+    src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff2) format("woff2"), url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:900
+}
+
+@font-face{
+    font-family:"UCF Condensed Alt";
+    src: url(../fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff2) format("woff2"), url(../fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:400
+}
+
+@font-face{
+    font-family:"UCF Condensed Alt";
+    src: url(../fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff2) format("woff2"), url(../fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff) format("woff");
+    font-style:italic;
+    font-weight:400
+}
+
+@font-face{
+    font-family:"UCF Slab Serif Alt";
+    src: url(../fonts/tulia/tulia_regular-webfont.woff2) format("woff2"), url(../fonts/tulia/tulia_regular-webfont.woff) format("woff");
+    font-style:normal;
+    font-weight:400
+}
+
+@font-face{
+    font-family:"UCF Slab Serif Alt";
+    src: url(../fonts/tulia/tulia_italic-webfont.woff2) format("woff2"), url(../fonts/tulia/tulia_italic-webfont.woff) format("woff");
+    font-style:italic;
+    font-weight:400
+}
+
+@font-face{
+    font-family:"UCF Slab Serif Alt";
+    src: url(../fonts/tulia/tulia_bold-webfont.woff2) format("woff2"), url(../fonts/tulia/tulia_bold-webfont.woff) format("woff");
+}
+
+/* misc fixers ----------------------------------------------------------------------------------------------------- */
+
+iframe[src="about:blank"]{
+    display: none; /* recaptcha iframe fix */
+}
+
+li:empty{
+    display: none;
+}
