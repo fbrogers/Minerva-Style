@@ -63,7 +63,50 @@ body {
     color: #eee;
 }
 
+.site-header.image{
+    background-color: #111;
+    background-image: url(../images/headermain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 68%;
+    padding: 4em 0 3em;
+}
 
+.header-title-block{
+    background-color: rgba(255,204,0,.9);
+    color: #000;
+    display: inline-block;
+}
+
+.header-title-block .header-title{
+    font-family: "UCF Sans Serif Alt", sans-serif;
+    font-size: 3.5rem;
+    padding: .75rem 1.5rem;
+    font-weight: 400;
+}
+
+.header-title-block .header-title a,
+.header-title-block .header-title a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.header-subtitle-block{
+    background-color: rgba(0,0,0,.9);
+    color: #000;
+    display: inline-block;
+}
+
+.header-subtitle-block .header-subtitle{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.header-subtitle-block .header-subtitle a,
+.header-subtitle-block .header-subtitle a:hover{
+    color: #fff;
+    text-decoration: none;
+}
 
 /* site navigation elements ---------------------------------------------------------------------------------------- */
 
