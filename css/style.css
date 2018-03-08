@@ -103,6 +103,57 @@ body {
     background-color: rgba(0,0,0,.15);
 }
 
+.site-nav-inline{
+    color: #fff;
+    background-color: #404040;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .site-nav-inline .container {
+        padding: 0.5em;
+    }
+}
+
+.site-nav-inline a{
+    color: #000;
+}
+
+.site-nav-inline .navbar-brand{
+    font-weight: 500;
+    color: #fff;
+}
+
+.site-nav-inline .navbar-brand:focus{
+    color: rgba(255,255,255,.8);
+}
+
+.site-nav-inline .navbar-nav .nav-link{
+    color: #fff;
+    padding: 1.25rem .8rem;
+}
+
+.site-nav-inline .navbar-nav .active>.nav-link,
+.site-nav-inline .navbar-nav .nav-link.active,
+.site-nav-inline .navbar-nav .nav-link.open,
+.site-nav-inline .navbar-nav .nav-link:active,
+.site-nav-inline .navbar-nav .nav-link:hover,
+.site-nav-inline .navbar-nav .open>.nav-link,
+.site-nav-inline .navbar-nav .show>.nav-link{
+    color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,.3);
+}
+
+.site-nav-inline .navbar-brand:focus,
+.site-nav-inline .navbar-brand:hover {
+    color: rgba(255,255,255,.8);
+}
+
+.site-nav-inline .form-inline{
+    margin-left: 1em;
+}
+
 .site-nav-repeat{
     margin: 3em auto 2em;
 }
