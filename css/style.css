@@ -109,6 +109,31 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .header-title-block .header-title{
+        font-size: 2.5rem;
+        padding: 1.25rem;
+    }
+
+    .header-subtitle-block .header-subtitle{
+        font-size: 1rem;
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-title-block .header-title{
+        font-size: 2rem;
+        padding: .75rem;
+        letter-spacing: -3px;
+    }
+
+    .header-subtitle-block .header-subtitle{
+        padding: .75rem;
+        padding: 1rem;
+    }
+}
+
 /* site navigation elements ---------------------------------------------------------------------------------------- */
 
 .site-nav{
@@ -118,9 +143,9 @@ body {
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .site-nav .container {
-        padding: 0.5em;
+        padding: 0.5em 1em;
     }
 }
 
@@ -154,9 +179,9 @@ body {
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .site-nav-inline .container {
-        padding: 0.5em;
+        padding: 0.5em 1em;
     }
 }
 
