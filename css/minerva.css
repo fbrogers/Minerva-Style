@@ -1,0 +1,699 @@
+@charset "utf-8";
+
+/* generics -------------------------------------------------------------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "UCF Sans Serif Alt", "Helvetica Neue", Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.65;
+  margin-bottom: 200px;
+}
+
+a.external{
+  padding-right: 20px;
+  padding-left: 0;
+  background: url('../images/ex-link.png') right center no-repeat;
+}
+
+a.external.list-group-item{
+  padding: 10px 15px;
+  background-image: url('../images/ex-link.png') no-repeat;
+  background-position: 95% center;
+}
+
+a[href$='.pdf']{
+  padding: 1px 0 0 20px;
+  background: url('../images/pdf.png') left center no-repeat;
+}
+
+a[href$='.pdf'].list-group-item{
+  padding: 10px 15px;
+  background-image: url('../images/pdf.png') no-repeat;
+  background-position: 95% center;
+}
+
+.nav-pills > li > a[href$='.pdf']{
+  padding-left: 30px;
+  background-position: 10px center;
+}
+
+h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
+  padding-right: 20px;
+  padding-left: 0;
+  background: url('../images/pdf.png') right center no-repeat;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.none, li:empty{
+  display: none;
+}
+
+/* marketing header ------------------------------------------------------------------------------------------------ */
+
+.site-header{
+  padding: 2.5em 0 2em;
+  background-color: #fff;
+}
+
+.site-header.image{
+  background-color: #555;
+  background-image: url(../images/sample.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 0 3em;
+}
+
+.header-title-block{
+  background-color: rgba(255,204,0,.9);
+  color: #000;
+  display: inline-block;
+}
+
+.header-title-block .header-title{
+  font-family: "UCF Sans Serif Alt", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding: .75rem 1.5rem;
+}
+
+.header-title-block .header-title a,
+.header-title-block .header-title a:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.header-subtitle-block{
+  background-color: rgba(0,0,0,.9);
+  color: #000;
+  display: inline-block;
+}
+
+.header-subtitle-block .header-subtitle{
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-weight: 300;
+}
+
+.header-subtitle-block .header-subtitle a,
+.header-subtitle-block .header-subtitle a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header-title-block .header-title{
+    font-size: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .header-subtitle-block .header-subtitle{
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-title-block .header-title{
+    font-size: 2rem;
+    padding: .75rem;
+    letter-spacing: -3px;
+  }
+
+  .header-subtitle-block .header-subtitle{
+    padding: .75rem;
+    padding: 1rem;
+  }
+}
+
+.site-nav{
+  background-color: #fc0;
+  color: 000;
+  margin-bottom: 2em;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .site-nav .container {
+    padding: 0.5em 1em;
+  }
+}
+
+.site-nav .navbar-nav{
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.site-nav .navbar-nav .nav-link {
+  color: #000;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.2;
+  padding: 1.25rem .8rem;
+  text-transform: uppercase;
+}
+
+.site-nav .navbar-nav .active>.nav-link,
+.site-nav .navbar-nav .nav-link:hover{
+  color: #fff;
+  background-color: rgba(0,0,0,.15);
+}
+
+/* slim nav -------------------------------------------------------------------------------------------------------- */
+
+.slim-nav{
+  margin-bottom: 2em;
+  padding: 0;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .slim-nav .container {
+    padding: 0.5em 1em;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+    margin-right: 2rem;
+  }
+}
+
+.slim-nav .navbar-nav .nav-link{
+  font-size: .75rem;
+  letter-spacing: .1em;
+  line-height: 1.2;
+  padding: 1.6rem .8rem;
+  text-transform: uppercase;
+}
+
+.slim-nav .form-inline{
+  margin-left: 1em;
+}
+
+/* slim nav / light theme ------------------------------------------------------------------------------------------ */
+
+.slim-nav-light{
+  background-color: #f7f7f7;
+}
+
+.slim-nav-light .navbar-brand{
+  color: #000;
+  font-weight: 700;
+}
+
+.slim-nav-light .navbar-brand:focus,
+.slim-nav-light .navbar-brand:hover{
+  color: rgba(0,0,0,.8);
+}
+
+.slim-nav-light .navbar-nav .nav-link{
+  color: #000;
+  font-weight: 700;
+}
+
+.slim-nav-light .navbar-nav .active>.nav-link,
+.slim-nav-light .navbar-nav .nav-link.active,
+.slim-nav-light .navbar-nav .nav-link.open,
+.slim-nav-light .navbar-nav .nav-link:active,
+.slim-nav-light .navbar-nav .nav-link:hover,
+.slim-nav-light .navbar-nav .open>.nav-link,
+.slim-nav-light .navbar-nav .show>.nav-link{
+  color: #222;
+  background-color: #ddd;
+}
+
+/* slim nav / dark theme ------------------------------------------------------------------------------------------- */
+
+.slim-nav-dark{
+  background-color: #404040;
+}
+
+.slim-nav-dark .navbar-brand{
+  color: #fff;
+  font-weight: 600;
+}
+
+.slim-nav-dark .navbar-brand:focus,
+.slim-nav-dark .navbar-brand:hover {
+  color: rgba(255,255,255,.8);
+}
+
+.slim-nav-dark .navbar-nav .nav-link{
+  color: #fff;
+  font-weight: 500;
+}
+
+.slim-nav-dark .navbar-nav .active>.nav-link,
+.slim-nav-dark .navbar-nav .nav-link.active,
+.slim-nav-dark .navbar-nav .nav-link.open,
+.slim-nav-dark .navbar-nav .nav-link:active,
+.slim-nav-dark .navbar-nav .nav-link:hover,
+.slim-nav-dark .navbar-nav .open>.nav-link,
+.slim-nav-dark .navbar-nav .show>.nav-link{
+  color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.3);
+}
+
+/* slim nav / red theme -------------------------------------------------------------------------------------------- */
+
+.slim-nav-red{
+  background-color: #dc3545;
+}
+
+.slim-nav-red .navbar-brand{
+  color: #fff;
+  font-weight: 600;
+}
+
+.slim-nav-red .navbar-brand:focus,
+.slim-nav-red .navbar-brand:hover {
+  color: rgba(255,255,255,.8);
+}
+
+.slim-nav-red .navbar-nav .nav-link{
+  color: #fff;
+  font-weight: 500;
+}
+
+.slim-nav-red .navbar-nav .active>.nav-link,
+.slim-nav-red .navbar-nav .nav-link.active,
+.slim-nav-red .navbar-nav .nav-link.open,
+.slim-nav-red .navbar-nav .nav-link:active,
+.slim-nav-red .navbar-nav .nav-link:hover,
+.slim-nav-red .navbar-nav .open>.nav-link,
+.slim-nav-red .navbar-nav .show>.nav-link{
+  color: rgba(255,255,255,.8);
+  background-color: #bd2130;
+}
+
+/* site content ---------------------------------------------------------------------------------------------------- */
+
+.site-content{
+  padding-bottom: 2em;
+}
+
+/* site footer elements -------------------------------------------------------------------------------------------- */
+
+.site-footer{
+  background-color: #3e3e3e;
+  color: #ccc;
+  font-family: "UCF Sans Serif Alt", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding-top: 40px;
+  position: absolute;
+  bottom: 0;
+  min-height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  body{
+    margin-bottom: 0
+  }
+
+  .site-footer{
+    position: relative;
+  }
+}
+
+.site-footer p{
+  line-height: 1.25em;
+}
+
+.site-footer a{
+  color: #ccc;
+}
+
+.site-footer a.external, .site-footer a[href$='.pdf']{
+  background: none;
+  padding: 0;
+}
+
+.site-footer a:hover{
+  color: #eee;
+}
+
+/* .net mvc misc fixers -------------------------------------------------------------------------------------------- */
+
+.editor-field textarea { width: 500px; height: 100px; }
+.field-validation-error { color: #f00; }
+.field-validation-valid { display: none; }
+.input-validation-error { border: 1px solid #f00; background-color: #fee; }
+.validation-summary-errors { font-weight: bold; color: #f00; }
+.validation-summary-errors li { white-space: pre-line; }
+.validation-summary-valid { display: none; }
+
+/* fonts ----------------------------------------------------------------------------------------------------------- */
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 300
+}
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 500
+}
+
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:600
+}
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 700
+}
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 800
+}
+
+@font-face{
+  font-family: "UCF Sans Serif Alt";
+  src: url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 900
+}
+
+@font-face{
+  font-family: "UCF Condensed Alt";
+  src: url(../fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+
+@font-face{
+  font-family:"UCF Condensed Alt";
+  src: url(../fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff2) format("woff2"),
+  url(../fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff) format("woff");
+  font-style: italic;
+  font-weight: 400
+}
+
+@font-face{
+  font-family: "UCF Slab Serif Alt";
+  src: url(../fonts/tulia/tulia_regular-webfont.woff2) format("woff2"),
+  url(../fonts/tulia/tulia_regular-webfont.woff) format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+
+@font-face{
+  font-family: "UCF Slab Serif Alt";
+  src: url(../fonts/tulia/tulia_italic-webfont.woff2) format("woff2"),
+  url(../fonts/tulia/tulia_italic-webfont.woff) format("woff");
+  font-style: italic;
+  font-weight: 400
+}
+
+/* ucf header bar copy --------------------------------------------------------------------------------------------- */
+
+#ucfhb-logo a, #ucfhb-search form #ucfhb-search-submit {
+  background-image: url('../images/spritesheet-v1.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #ucfhb-logo a, #ucfhb-search form #ucfhb-search-submit {
+    background-image: url('../images/spritesheet-r-v1.png');
+    background-size: 326px 190px;
+  }
+}
+
+#ucfhb {
+  display: block !important;
+  height: 50px;
+  width: 100%;
+  margin: auto;
+  background: #000;
+  position: relative;
+  z-index: 10000;
+  align-self: flex-start !important;
+  flex: 0 0 auto !important;
+  order: 0 !important;
+}
+
+#ucfhb, #ucfhb:before, #ucfhb:after, #ucfhb *, #ucfhb *:before, #ucfhb *:after {
+  box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+
+#ucfhb a {
+  border: 0;
+}
+
+#ucfhb-inner {
+  display: block !important;
+  width: 940px;
+  margin: auto;
+  height: 50px;
+  position: relative;
+  z-index: 1000;
+}
+
+#ucfhb-left {
+  float: left;
+}
+
+#ucfhb-logo a {
+  background-position: 0 -100px;
+  display: block;
+  margin: 9px 0 0 0;
+  min-height: 31px;
+  text-indent: -9999px;
+  width: 296px;
+}
+
+#ucfhb-right {
+  float: right;
+  position: relative;
+  width: 420px;
+  height: 50px;
+  overflow: hidden;
+}
+
+#ucfhb-search {
+  height: 32px;
+  margin-top: 9px;
+  overflow: hidden;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 210px;
+  z-index: 2;
+}
+
+#ucfhb-search form {
+  display: block;
+  width: 210px;
+  height: 29px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  text-align: left;
+}
+
+#ucfhb-search form label {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  color: #fff; /* Suppresses contrast warnings in WAVE */
+  display: block;
+  font-size: 0;
+  line-height: 0 !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#ucfhb-search-field {
+  width: 148px !important;
+  height: 23px !important;
+  border-radius: 5px 0 0 5px;
+  border: solid 1px #fff;
+  box-shadow: none;
+  margin: 0;
+  padding: 2px 40px 2px 15px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  font-family: 'Helvetica-Neue', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  letter-spacing: 0.1px;
+  background-size: 20px 19px;
+  -webkit-appearance: none;
+}
+
+#ucfhb-search-field:focus {
+  border: solid 1px #ffc904;
+  outline: 0;
+}
+
+#ucfhb-search form #ucfhb-search-submit {
+  background-color: #ffc904;
+  background-position: -107px -2px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  display: block;
+  height: 29px;
+  margin: 0;
+  padding: 0 3px 0 5px;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  top: 2px;
+  width: 28px;
+}
+
+#ucfhb-search-minimal {
+  background-color: #ffc904;
+  background-position: -111px -2px;
+  border-radius: 4px;
+  display: none;
+  height: 29px;
+  position: absolute;
+  text-indent: -9999px;
+  top: 2px;
+  width: 29px;
+}
+
+#ucfhb-search form #ucfhb-search-submit:hover {
+  background-color: #ffeba4;
+}
+
+@media (max-width: 979px) {
+  #ucfhb {
+    1height: 100px;
+    margin-top: -50px;
+  }
+  #ucfhb-inner {
+    1width: 720px;
+    height: 50px;
+  }
+  #ucfhb-left {
+    1width: 100%;
+    height: 39px;
+    position: absolute;
+    top: 50px;
+    float: none;
+  }
+  #ucfhb-right {
+    1position: absolute;
+    width: 100%;
+    visibility: visible;
+    height: 49px;
+    border-bottom: 1px solid #454545;
+    top: 0;
+    float: none;
+  }
+  #ucfhb-search {
+    1width: 50%;
+    position: static;
+    float: left;
+    padding: 0;
+    margin: 3px 0 0 0;
+    right: 0;
+    left: 0;
+    border: 0;
+  }
+  #ucfhb-search {
+    1height: 38px;
+    margin-top: 4px;
+  }
+  #ucfhb-search form {
+    1height: 38px;
+    margin: auto;
+    padding: 0 10px;
+    position: relative;
+    left: -4px;
+  }
+  #ucfhb-search-field {
+    1font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 182px !important;
+  }
+  #ucfhb-search form #ucfhb-search-submit {
+    1background-position: -107px 2px;
+    height: 35px;
+    right: -14px;
+  }
+}
+@media (max-width: 767px) {
+  #ucfhb-inner {
+    width: 100%;
+  }
+  #ucfhb-logo a {
+    margin-left: 4px;
+  }
+}
+@media (max-width: 640px) {
+  #ucfhb { height: 150px; margin-top: -100px; }
+  #ucfhb-inner { height: 100px; }
+  #ucfhb-left { top: 100px; }
+  #ucfhb-right { height: 99px; }
+  #ucfhb-search { width: 100% !important; }
+  #ucfhb-search { margin-top: 8px; }
+}
+@media (max-width: 350px) {
+  #ucfhb-logo a { background-position: 0 -162px; }
+}
+@media (min-width: 1200px) {
+  #ucfhb-inner { width: 1140px; }
+  #ucfhb-logo a { background-position: 0 -131px; width: 322px; }
+  #ucfhb-right { width: 460px; }
+  #ucfhb-search, #ucfhb-search form { width: 270px; }
+  #ucfhb-search-field { width: 208px !important; }
+}
+
+@media print { #ucfhb { display: none !important; }}
