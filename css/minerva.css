@@ -613,22 +613,22 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
 
 @media (max-width: 979px) {
   #ucfhb {
-    1height: 100px;
+    height: 100px;
     margin-top: -50px;
   }
   #ucfhb-inner {
-    1width: 720px;
+    width: 720px;
     height: 50px;
   }
   #ucfhb-left {
-    1width: 100%;
+    width: 100%;
     height: 39px;
     position: absolute;
     top: 50px;
     float: none;
   }
   #ucfhb-right {
-    1position: absolute;
+    position: absolute;
     width: 100%;
     visibility: visible;
     height: 49px;
@@ -637,7 +637,7 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
     float: none;
   }
   #ucfhb-search {
-    1width: 50%;
+    width: 50%;
     position: static;
     float: left;
     padding: 0;
@@ -647,24 +647,24 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
     border: 0;
   }
   #ucfhb-search {
-    1height: 38px;
+    height: 38px;
     margin-top: 4px;
   }
   #ucfhb-search form {
-    1height: 38px;
+    height: 38px;
     margin: auto;
     padding: 0 10px;
     position: relative;
     left: -4px;
   }
   #ucfhb-search-field {
-    1font-size: 16px;
+    font-size: 16px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 182px !important;
   }
   #ucfhb-search form #ucfhb-search-submit {
-    1background-position: -107px 2px;
+    background-position: -107px 2px;
     height: 35px;
     right: -14px;
   }
