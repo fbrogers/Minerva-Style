@@ -29,13 +29,28 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
 </head>
 ```
 
+### jQuery Include
+
+Depending on the jQuery usage in your site, you may need to put this in the `<head>`. If you are judicious about loading any jQuery-dependent JavaScript after the include at the end of the `<body>` tag, feel free to place it there.
+
+#### Regular (Full-Featured)
+
+```html
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+```
+
+#### Slim (if you aren't doing anything other than normal BS4 stuff)
+
+```html
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+```
+
 ### JavaScript Includes
 
 Place this code snippet as the **last** elements in the `<body>` tag.
 
 ```html
 <!-- js -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='//universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1' id='ucfhb-script'></script>
@@ -132,7 +147,7 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
 
 ### Site Header and Navigation: Slim Nav Theme(s)
 
-(Replace `slim-nav-light` with `slim-nav-dark` or `slim-nav-red` for desired effect.)
+(Replace `slim-nav-light` with `slim-nav-dark` or `slim-nav-red` and `navbar-light` with `navbar-dark` for desired effect.)
 
 ```html
 <header>
