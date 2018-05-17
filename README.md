@@ -154,6 +154,9 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
     <nav class="navbar navbar-light navbar-expand-lg slim-nav slim-nav-light">
         <div class="container">
             <a class="navbar-brand" href="#">{{{Application Area Title}}}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="navbar-nav ml-md-auto">
                     <li class="nav-item">
@@ -183,9 +186,6 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
                     <button class="btn btn-sm btn-warning" type="button">Log Out</button>
                 </form>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
 </header>
