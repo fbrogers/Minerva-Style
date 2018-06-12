@@ -67,6 +67,22 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
   display: none;
 }
 
+/* additional width classes ---------------------------------------------------------------------------------------- */
+
+/* thirds */
+.w-33 { width: 33% !important; }
+.w-66 { width: 66% !important; }
+
+/* fifths */
+.w-20 { width: 20% !important; }
+.w-40 { width: 40% !important; }
+.w-60 { width: 60% !important; }
+.w-80 { width: 80% !important; }
+
+/* sixths */
+.w-17 { width: 17% !important; }
+.w-83 { width: 83% !important; }
+
 /* marketing header ------------------------------------------------------------------------------------------------ */
 
 .site-header{
