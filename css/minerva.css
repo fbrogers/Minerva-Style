@@ -59,6 +59,10 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
   font-weight: 400;
 }
 
+.form-group > label {
+    font-weight: 600;
+}
+
 .none, li:empty{
   display: none;
 }
