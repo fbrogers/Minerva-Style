@@ -31,18 +31,10 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
 
 ### jQuery Include
 
-Depending on the jQuery usage in your site, you may need to put this in the `<head>`. If you are judicious about loading any jQuery-dependent JavaScript after the include at the end of the `<body>` tag, feel free to place it there.
-
-#### Regular (Full-Featured)
+Depending on the jQuery usage in your site, you may need to put this in the `<head>`.
 
 ```html
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-```
-
-#### Slim (if you aren't doing anything other than normal BS4 stuff)
-
-```html
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
 ```
 
 ### JavaScript Includes
@@ -51,35 +43,42 @@ Place this code snippet as the **last** elements in the `<body>` tag.
 
 ```html
 <!-- js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type='text/javascript' src='//universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1' id='ucfhb-script'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/minerva.js"></script>
 ```
 
-#### Lightweight UCF Header Bar
+### UCF Header Bar
+
+#### Public-Facing Sites (Official Marketing Bar)
+
+Add a placeholder for the UCF Header Bar beneath the screen reader skip link:
+
+```html
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <div id="ucfhb"></div>
+```
+
+Include the UCF Header Bar JS include under the footer (with the rest of the included JS):
+
+```html
+<script type='text/javascript' src='//universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1' id='ucfhb-script'></script>
+```
+
+#### Internal Sites (Minerva Slimmed-Down Bar)
 
 For use on internal-only visibility, typically paired with **Slim Nav Dark** and always **Slim Nav Red**. Add this as the first element inside the body tag (after the "jump to content" screen-reader snippet). Remember to **remove** the JS include for the UCF Header Bar if you are using this version.
 
 ```html
-<div id="ucfhb">
-    <div id="ucfhb-inner">
-        <div id="ucfhb-left">
-            <div id="ucfhb-logo">
-                <a href="https://www.ucf.edu">University of Central Florida</a>
-            </div>
-        </div>
-        <div id="ucfhb-right">
-            <div id="ucfhb-search">
-                <form action="https://search.ucf.edu/" name="ucfhb-search-form" id="ucfhb-search-form">
-                    <label for="ucfhb-search-field">Search UCF</label>
-                    <input type="text" name="q" id="ucfhb-search-field" placeholder="Search UCF" role="searchbox">
-                    <input type="submit" value="Search" id="ucfhb-search-submit">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+```
+
+Include the JS under the footer (with the rest of the included JS):
+
+```html
+<script type="text/javascript" src="https://assets.sdes.ucf.edu/cdn/minerva/v1.0.0-beta/js/internal-header.js"></script>
 ```
 
 ### Site Header and Navigation: Marketing Theme
