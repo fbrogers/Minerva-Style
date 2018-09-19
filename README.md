@@ -14,7 +14,7 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
 ### HTML Header
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -22,10 +22,10 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{{Page Title}}} | {{{Site Title}}} | UCF</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/minerva.css" />
-    <link rel="shortcut icon" href="images/favicon_black.png" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/css/minerva.css" />
+    <link rel="shortcut icon" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/images/favicon_black.png" />
+    <link rel="apple-touch-icon" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/images/apple-touch-icon.png" />
 </head>
 ```
 
@@ -43,9 +43,9 @@ Place this code snippet as the **last** elements in the `<body>` tag.
 
 ```html
 <!-- js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/minerva.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/js/minerva.js"></script>
 ```
 
 ### UCF Header Bar
@@ -63,7 +63,7 @@ Add a placeholder for the UCF Header Bar beneath the screen reader skip link:
 Include the UCF Header Bar JS include under the footer (with the rest of the included JS):
 
 ```html
-<script type='text/javascript' src='//universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1' id='ucfhb-script'></script>
+<script type="text/javascript" src="https://universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1" id="ucfhb-script"></script>
 ```
 
 #### Internal Sites (Minerva Slimmed-Down Bar)
@@ -78,7 +78,7 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
 Include the JS under the footer (with the rest of the included JS):
 
 ```html
-<script type="text/javascript" src="https://assets.sdes.ucf.edu/cdn/minerva/v1.0.0-beta/js/internal-header.js"></script>
+<script type="text/javascript" src="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/js/internal-header.js"></script>
 ```
 
 ### Site Header and Navigation: Marketing Theme
