@@ -22,7 +22,7 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{{Page Title}}} | {{{Site Title}}} | UCF</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/css/minerva.css" />
     <link rel="shortcut icon" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/images/favicon_black.png" />
     <link rel="apple-touch-icon" href="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/images/apple-touch-icon.png" />
@@ -43,8 +43,8 @@ Place this code snippet as the **last** elements in the `<body>` tag.
 
 ```html
 <!-- js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/js/minerva.js"></script>
 ```
 
@@ -63,7 +63,7 @@ Add a placeholder for the UCF Header Bar beneath the screen reader skip link:
 Include the UCF Header Bar JS include under the footer (with the rest of the included JS):
 
 ```html
-<script type="text/javascript" src="https://universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1" id="ucfhb-script"></script>
+<script src="https://universityheader.ucf.edu/bar/js/university-header.js?use-1200-breakpoint=1" id="ucfhb-script"></script>
 ```
 
 #### Internal Sites (Minerva Slimmed-Down Bar)
@@ -78,7 +78,7 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
 Include the JS under the footer (with the rest of the included JS):
 
 ```html
-<script type="text/javascript" src="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/js/internal-header.js"></script>
+<script src="https://ucfcuse2netcdnsa01.blob.core.windows.net/ucfcuse2netstc001/minerva-v1.0.0/js/internal-header.js"></script>
 ```
 
 ### Site Header and Navigation: Marketing Theme
