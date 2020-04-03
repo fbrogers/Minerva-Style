@@ -23,9 +23,9 @@ A Roman-styled theme for Bootstrap 4 with custom structural classes.
     <title>{{{Page Title}}} | {{{Site Title}}} | UCF</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.it.ucf.edu/minerva-v1.0.0/css/minerva.css" />
-    <link rel="shortcut icon" href="https://cdn.it.ucf.edu/minerva-v1.0.0/images/favicon_black.png" />
-    <link rel="apple-touch-icon" href="https://cdn.it.ucf.edu/minerva-v1.0.0/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdn.it.ucf.edu/minerva/1.0.0/css/minerva.css" />
+    <link rel="shortcut icon" href="https://cdn.it.ucf.edu/minerva/1.0.0/images/favicon_black.png" />
+    <link rel="apple-touch-icon" href="https://cdn.it.ucf.edu/minerva/1.0.0/images/apple-touch-icon.png" />
 </head>
 ```
 
@@ -45,7 +45,7 @@ Place this code snippet as the **last** elements in the `<body>` tag.
 <!-- js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.it.ucf.edu/minerva-v1.0.0/js/minerva.js"></script>
+<script type="text/javascript" src="https://cdn.it.ucf.edu/minerva/1.0.0/js/minerva.js"></script>
 ```
 
 ### UCF Header Bar
@@ -78,7 +78,7 @@ For use on internal-only visibility, typically paired with **Slim Nav Dark** and
 Include the JS under the footer (with the rest of the included JS):
 
 ```html
-<script src="https://cdn.it.ucf.edu/minerva-v1.0.0/js/internal-header.js"></script>
+<script src="https://cdn.it.ucf.edu/minerva/1.0.0/js/internal-header.js"></script>
 ```
 
 ### Site Header and Navigation: Marketing Theme
